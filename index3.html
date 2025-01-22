@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Висилица</title>
+        <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #he{
+            width:100vw;
+            height:60px;
+            background:#00cc99;
+        
+        }
+        #he span{
+            color:white;
+            margin-left:100px;
+            line-height:70px;
+            font-size:20px;
+            font-weight:bold;
+        }
+      #fro{
+          width:300px;
+          height:200px;
+          position:absolute;
+          
+      }      
+      #midf{
+          width:10px;
+          height:200px;
+          padding:50px 110px;
+      }
+      #foof{
+      width:100vw;
+      height:200px;
+          
+      }
+      #foof h1{
+      font-size:45px;
+          color:grey;
+        margin-left:60px;
+        margin-top:-45px;
+        
+        }
+        #start{
+            margin-left:100px;
+            margin-top:20px;
+            height:50px;
+            width:140px;
+            background:#009973;
+            outline:none;
+            font-size:30px;
+            color:white;
+        }
+        #newdiv{
+            position:absolute;
+            margin-top:60px;
+            width:100%;
+            height:90vh;
+            background:#fff;
+        }
+        .fa-home{
+        position:absolute;
+            color:white;
+            margin-left:30px;
+            font-size:30px;
+            margin-top:18px;
+        }
+        #newm{
+            margin-left:60px;
+            margin-top:20px;
+            padding:20px;
+        }
+        #gb{
+        position:absolute;
+            width:80%;
+            height:100px;
+            padding-left:50px;
+            margin-top:-50px;
+            text-align:center;
+        }
+        .gbo{
+            height:30px;
+            width:30px;
+            border-bottom:5px solid black;
+            float:left;
+            margin-top:20px;
+            margin-left:8px;
+            font-size:18px;
+            
+            
+        }
+        #ent{
+            width:210px;
+            height:40px;
+            border-radius:8px;
+            border:1px solid #ff0066;
+            outline:none;
+            margin-left:10px;
+            padding-left:20px;
+            font-size:18px;
+        }
+        #bt{
+          width:90px;
+            height:30px;  
+            border-radius:4px;
+            
+            background:#00cc99;
+        }
+        
+        #entry{
+            position:absolute;
+            margin-top:20px;
+            
+        }
+        #winRar,#lostRar{
+        position:absolute;
+            width:100%;
+            height:90vh;
+            margin-top:60px;
+        background:#fff;
+            
+        }
+      
+       .winpara,.lostpara{
+           font-size:40px;
+           color:#ff9900;
+           margin-left:100px;
+           font-weight:bold;
+           margin-top:20px;
+           
+       }
+       #winword,#lostword{
+        
+           text-align:center;
+           font-size:28px;
+           color:#ff9900;
+           font-weight:bold;
+           
+       }
+       #lostimg{
+    
+    margin-top:30px;
+    margin-left:100px;
+           height:170px;
+           width:190px;
+           opacity:0.8;
+           transform:scale(1.3);
+       }
+       #lm{
+           width:100%;
+           height:300px;
+       }
+       #yt{
+           margin-top:10px;
+           height:50px;
+           width:100%;
+           background:#ff9900;
+           
+           
+       }
+       #yt a{
+           color:white;
+           font-size:22px;
+       }
+        </style>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />  
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+    <div id="winRar">
+    <p class="winpara">Ты победил!</p>
+        <svg width="300" height="300">
+        <circle cx="180" cy="150" r="80" fill="yellow" stroke="black" stroke-width="8px"></circle>
+        <circle cx="150" cy="110" r="10"></circle>
+        <circle cx="210" cy="110" r="10"></circle>
+        <path d="M130 140 C140 180,220 180,230 140 L230 150 C220 190,140 190,130 150 Z">
+        
+       
+           
+        </svg>
+        
+         <p id="winword"></p>
+         
+    </div>
+    
+    <div id="lostRar">
+    <p class="lostpara">Ты проиграл!</p>
+    
+    <div id="lm">
+        <img id="lostimg" src="https://i.ibb.co/vZvQ7yp/Screenshot-2020-0829-181428.png" >
+        </div>
+        
+         <p id="lostword"></p>
+        
+        
+    </div>
+    
+    
+    
+    <div id="newdiv">
+    <div id="newm">
+     <svg height="180" width="250" id="ob2">
+            <path d="M30 130 L90 130 L90 10 L40 10 L40 30 L30 30 L30 0 L100 0 L100 130 L140 130 L140 140 L30 140  Z" fill="#000"/>
+            
+            <circle cx="35" cy="40" r="14"   fill="#fff" stroke-width="4" stroke="black" id="g1"></circle>
+            <line x1="35" y1="55" x2="35" y2="105" stroke="black" stroke-width="4" id="g2"/>
+            
+            <!-- legs...-->
+            
+           <line x1="35" y1="105" x2="10" y2="120" stroke="black" stroke-width="4" id="g3"/> 
+           <line x1="35" y1="105" x2="60" y2="120" stroke="black" stroke-width="4" id="g4"/>  
+           
+           <!-- hands-->
+           
+            <line x1="35" y1="75" x2="10" y2="60" stroke="black" stroke-width="4" id="g5"/>  
+          <line x1="35" y1="75" x2="60" y2="60" stroke="black" stroke-width="4" id="g6"/>     
+            
+        </svg>
+       
+        </div>
+        <div id="gb">
+            
+        </div>
+        
+        <div id="entry">
+        
+      <input autofocus type="text" id="ent" placeholder="Напиши Одну Букву" maxlength="1"  />
+      
+      <button id="bt">Буква</button>  
+      
+        </div>
+    </div>
+    <div id="he">
+        <i class="fa fa-home"></i>
+    <span>Висилица by MrFlit</span></div>
+    <div id="fro">
+    
+    <div id="midf">
+        <svg height="180" width="250">
+            <path d="M10 160 L80 160 L80 20 L30 20 L30 50 L20 50 L20 10 L100 10 L100 160 L120 160 L120 175 L10 175 Z" fill="#000"/>
+            
+            <circle cx="25" cy="63" r="12"   fill="#fff" stroke-width="4" stroke="black"></circle>
+            <line x1="25" y1="75" x2="25" y2="125" stroke="black" stroke-width="4"/>
+            
+            <!-- legs...-->
+            
+           <line x1="25" y1="123" x2="0" y2="140" stroke="black" stroke-width="4"/> 
+           <line x1="25" y1="123" x2="50" y2="140" stroke="black" stroke-width="4"/>  
+           
+           <!-- hands-->
+           
+            <line x1="25" y1="95" x2="50" y2="80" stroke="black" stroke-width="4"/>  
+          <line x1="25" y1="95" x2="0" y2="80" stroke="black" stroke-width="4"/>     
+            
+        </svg>
+       
+        </div>
+        <div id="foof">
+        <h1>Добро пожаловать в Висилицу!</h1>
+        <button id="start">Начать</button> 
+        <button id="yt"><a href="https://vk.com/mrflit">Подпишись</a></button>
+        </div>
+    </div>
+    
+    <script>
+   $(document).ready(function(){
+   
+   $("#newdiv").hide();  
+   $("#winRar").hide();
+   $("#lostRar").hide();
+   
+ $("#g1,#g2,#g3,#g4,#g5,#g6").hide();
+ 
+ 
+    $("#start").click(function(){
+    
+    $("#fro").hide();
+    var ch=0;
+ var shw=0;
+    
+    $("#newdiv").show(); 
+    $("#ent").focus();
+    
+    var word=["победа","игра","жизнь","зима","лето","банан","барабан","батон","болото","борьба","ботинки","будто","быстро","воробей","ворона","забор","загадка","задача","закон","запа","звонишь","звонят","зеркало","зима","забина","закао","залина","весна","осень","запитан","запуста","зарандаш","зарман","зартон","зоньки","мальчик","мебель","месяц","морковь","муравей"];
+    
+     
+    
+     var ran=Math.floor(Math.random()*40);
+     
+     selectedWord=word[ran];
+     
+     lengthOfSelWord =  selectedWord.length;
+    
+     for(var i=1;i<=lengthOfSelWord;i++)
+  {
+  
+      $("#gb").append("<div class='gbo h"+i+"'></div>");
+      
+  }
+  
+   win2="";
+   
+  $("#bt").click(function(){
+  
+  $("#ent").focus();
+   
+  var inputValue=$("#ent").val();
+  if( inputValue != ""){
+  $("#ent").val("");
+  var inputValueUpper=inputValue.toLowerCase();
+   var  n=0;
+   
+  for(var j=0;j<lengthOfSelWord;j++)
+  {
+    
+      if(inputValueUpper==selectedWord[j])
+      {
+      
+      var  z=j+1;
+      
+      $(".h"+z).html("<h3>"+inputValueUpper+"</h3>");
+    
+      
+       
+      }
+      else{
+        
+         n=n+1;
+         
+         
+      }
+      
+      
+      }     
+      
+  if(n==lengthOfSelWord) {
+  ch=ch+1;
+  
+      $("#g"+ch).show();
+      shw=shw+1;
+  }   
+    if(shw==6)  {
+    ch=0;
+    shw=0;
+    $("#newdiv").hide();
+        $("#lostRar").show();
+         $("#lostword").text("Слово было"+" "+ selectedWord);
+        
+    }
+    var zx=0;
+    for(var v=1;v<=lengthOfSelWord;v++){
+    
+        var xx=$(".h"+v).text();
+        
+        if(xx != "")
+        {
+            var zx=zx+1;
+        }
+    }
+    if(zx==lengthOfSelWord)
+    {
+    ch=0;
+    shw=0;
+    $("#newdiv").hide();
+        $("#winRar").show();
+        $("#winword").text("Слово было"+" "+ selectedWord);
+        
+    }
+    
+    }
+    
+    else{
+        
+    }
+  
+      
+  })
+    
+       })
+       
+    $(".fa-home").click(function(){
+    ch=0;
+    shw=0;
+    $("#fro").show();
+    $("#newdiv").hide();  
+    $("#gb").empty();
+    $("#winRar").hide();
+    
+    $("#lostRar").hide();
+    
+    $("#g1,#g2,#g3,#g4,#g5,#g6").hide();
+   
+   win2="";
+    
+    
+       })   
+       
+       
+   })   
+    </script>
+     
+    </body>
+</html>
