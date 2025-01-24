@@ -11,7 +11,7 @@
 ### Website Preview
 <p align="center"> 
   <kbd>
-    <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="examples/preview.gif">
+    <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="img/preview.png">
   </a>
   </kbd>
 </p>
