@@ -39,7 +39,7 @@
 ✔️ About me\
 ✔️ Services\
 ✔️ Projects \
-✔️ Contact Info\
+✔️ Contact Info \
 
 To view a live example, **[click here](https://mrflit.github.io/Portfolio/)**
 
