@@ -12,6 +12,10 @@
 <p align="center"> 
   <kbd>
     <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="img/preview.png">
+    #### 2v Web:
+    <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="img/preview2.gif">
+    #### 3v Web:
+    <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="img/preview3.gif">
   </a>
   </kbd>
 </p>
