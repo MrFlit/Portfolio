@@ -9,16 +9,16 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ### Website Preview
-<p align="center"> 
-  <kbd>
-    <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="img/preview.png">
-    #### 2v Web:
-    <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="img/preview2.gif">
-    #### 3v Web:
-    <a href="https://mrflit.github.io/Portfolio" target="_blank"><img src="img/preview3.gif">
-  </a>
-  </kbd>
-</p>
+
+<p align="center"><img src="img/preview.png"></p>
+
+#### 2v Web:
+
+<p align="center"><img src="img/preview2.gif"></p>
+
+#### 3v Web:
+
+<p align="center"><img src="img/preview3.gif"></p>
 
 :star: Star me on GitHub — it helps!
 
